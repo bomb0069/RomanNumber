@@ -42,10 +42,13 @@ public class RomanNumberTest {
 	} 	
 
 	@Test
-	public void test11To13ShouldBeReturnXPlusIXTime (){
+	public void test11To18ShouldBeReturnXPlusIXTime (){
 		assertEquals("XI", romanNumber.get(11));
 		assertEquals("XII", romanNumber.get(12));
 		assertEquals("XIII", romanNumber.get(13));
+		assertEquals("XIV", romanNumber.get(14));
+		assertEquals("XV", romanNumber.get(15));
+		assertEquals("XVII", romanNumber.get(17));
 	} 	
 
 
