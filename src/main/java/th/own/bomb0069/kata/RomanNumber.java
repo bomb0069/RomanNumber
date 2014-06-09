@@ -1,24 +1,30 @@
 package th.own.bomb0069.kata;
 
+import java.util.List;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.HashMap;
+
 public class RomanNumber {
+
+	List<Integer> romanNumbers = Arrays.asList(10,5);
+	static Map<Integer,String> romanChar = new HashMap<Integer,String>();
+	static {
+		romanChar.put(5,"V");
+		romanChar.put(10,"X");
+	}
 
 	public String get(int number) {
 		String romanNumber = "";
 
-		if (number == 9)
-			return "IX";
-
-		if (number >= 10) {
-			romanNumber+= "X";
-			number -= 10;
-		}
-
-		if (number == 4)
-			return "IV";
-
-		if (number >= 5) {
-			romanNumber+= "V";
-			number -= 5;
+		for (Integer romanNo : romanNumbers) {
+			if (number == romanNo - 1) {
+				romanNumber+= "I" + romanChar.get(romanNo);
+				number = 0;
+			} else if (number >= romanNo) {
+				romanNumber+= romanChar.get(romanNo);
+				number -= romanNo;
+			}
 		}
 
 		for (int loopNum = 1 ; loopNum <= number; loopNum++)
