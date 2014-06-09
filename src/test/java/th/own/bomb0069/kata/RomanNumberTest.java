@@ -21,4 +21,10 @@ public class RomanNumberTest {
 	public void test3ShouldBeReturnIII (){
 		assertEquals("III", romanNumber.get(3));
 	} 
+
+	@Test
+	public void test4ShouldBeReturnIV (){
+		assertEquals("IV", romanNumber.get(4));
+	} 
+
 }
