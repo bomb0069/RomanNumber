@@ -7,12 +7,13 @@ import java.util.HashMap;
 
 public class RomanNumber {
 
-	List<Integer> romanNumbers = Arrays.asList(10,5,1);
+	List<Integer> romanNumbers = Arrays.asList(50,10,5,1);
 	static Map<Integer,String> romanChar = new HashMap<Integer,String>();
 	static {
 		romanChar.put(1,"I");
 		romanChar.put(5,"V");
 		romanChar.put(10,"X");
+		romanChar.put(50,"L");
 	}
 
 	public String get(int number) {
