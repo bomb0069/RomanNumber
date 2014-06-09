@@ -19,10 +19,8 @@ public class RomanNumber {
 		String romanNumber = "";
 
 		for (Integer romanNo : romanNumbers) {
-			do {
-				if (number == 0) {
-
-				} else if (number == romanNo - 1) {
+			while ((number != 0) && (number >= romanNo - 1)) {
+				if (number == romanNo - 1) {
 					romanNumber+= "I" + romanChar.get(romanNo);
 					number = 0;
 				} else if (number >= romanNo) {
@@ -30,7 +28,6 @@ public class RomanNumber {
 					number -= romanNo;
 				}
 			}
-			while ((number != 0) && (number >= romanNo - 1));
 		}
 
 		return romanNumber;
