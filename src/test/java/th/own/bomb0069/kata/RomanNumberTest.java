@@ -71,37 +71,44 @@ public class RomanNumberTest {
 		assertEquals("XLVI", romanNumber.get(46));
 		assertEquals("XLIX", romanNumber.get(49));
 	} 	
-/*
+
 	@Test
-	public void test49and50and51 (){
-		assertEquals("IL", romanNumber.get(49));
+	public void test50and51 (){
 		assertEquals("L", romanNumber.get(50));
 		assertEquals("LI", romanNumber.get(51));
 	} 	
 
 	@Test
-	public void test52To98 (){
+	public void test52To89 (){
 		assertEquals("LV", romanNumber.get(55));
 		assertEquals("LXIV", romanNumber.get(64));
 		assertEquals("LXXIX", romanNumber.get(79));
-		assertEquals("LXXXXVIII", romanNumber.get(98));
+	} 	
+
+	@Test
+	public void test90and91 (){
+		assertEquals("XC", romanNumber.get(90));
+		assertEquals("XCI", romanNumber.get(91));
 	} 	
 
 
 	@Test
 	public void testCDM (){
-		assertEquals("IC", romanNumber.get(99));
 		assertEquals("C", romanNumber.get(100));
 		assertEquals("CI", romanNumber.get(101));
 
-		assertEquals("ID", romanNumber.get(499));
+		assertEquals("CD", romanNumber.get(400));
+		assertEquals("CDI", romanNumber.get(401));
+
 		assertEquals("D", romanNumber.get(500));
 		assertEquals("DI", romanNumber.get(501));
 
-		assertEquals("IM", romanNumber.get(999));
+		assertEquals("CM", romanNumber.get(900));
+		assertEquals("CMI", romanNumber.get(901));
+
 		assertEquals("M", romanNumber.get(1000));
 		assertEquals("MI", romanNumber.get(1001));
 	} 	
 
-*/
+
 }

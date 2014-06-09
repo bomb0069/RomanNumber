@@ -8,8 +8,11 @@ public class RomanNumber {
 	static Map<Integer,String> romanChar = new LinkedHashMap<Integer,String>();
 	static {
 		romanChar.put(1000,"M");
+		romanChar.put(900,"CM");
 		romanChar.put(500,"D");
+		romanChar.put(400,"CD");
 		romanChar.put(100,"C");
+		romanChar.put(90,"XC");
 		romanChar.put(50,"L");
 		romanChar.put(40,"XL");
 		romanChar.put(10,"X");
