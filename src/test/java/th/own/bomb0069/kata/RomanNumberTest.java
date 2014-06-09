@@ -36,4 +36,9 @@ public class RomanNumberTest {
 	public void test6ShouldBeReturnVI (){
 		assertEquals("VI", romanNumber.get(6));
 	} 	
+
+	@Test
+	public void test7ShouldBeReturnVII (){
+		assertEquals("VII", romanNumber.get(7));
+	} 	
 }

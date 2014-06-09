@@ -4,6 +4,10 @@ public class RomanNumber {
 
 	public String get(int number) {
 		String romanNumber = "";
+
+		if (number == 7)
+			return "VII";
+
 		if (number == 6)
 			return "VI";
 
