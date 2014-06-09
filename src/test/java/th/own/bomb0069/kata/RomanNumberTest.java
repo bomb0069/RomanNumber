@@ -43,8 +43,13 @@ public class RomanNumberTest {
 	} 	
 
 	@Test
-	public void test7ShouldBeReturnVIII (){
+	public void test8ShouldBeReturnVIII (){
 		assertEquals("VIII", romanNumber.get(8));
+	} 	
+
+	@Test
+	public void test9ShouldBeReturnIX (){
+		assertEquals("IX", romanNumber.get(9));
 	} 	
 
 }
