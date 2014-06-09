@@ -55,16 +55,23 @@ public class RomanNumberTest {
 	public void test19ShouldBeReturnXIX (){
 		assertEquals("XIX", romanNumber.get(19));
 	} 	
-/*
+
 	@Test
 	public void test20To48 (){
 		assertEquals("XXV", romanNumber.get(25));
 		assertEquals("XXX", romanNumber.get(30));
 		assertEquals("XXXIX", romanNumber.get(39));
-		assertEquals("XXXXIV", romanNumber.get(44));
 	} 	
 
-
+	@Test
+	public void test40ShouldBeXL (){
+		assertEquals("XL", romanNumber.get(40));
+		assertEquals("XLIV", romanNumber.get(44));
+		assertEquals("XLV", romanNumber.get(45));
+		assertEquals("XLVI", romanNumber.get(46));
+		assertEquals("XLIX", romanNumber.get(49));
+	} 	
+/*
 	@Test
 	public void test49and50and51 (){
 		assertEquals("IL", romanNumber.get(49));
