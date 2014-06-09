@@ -4,19 +4,17 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class RomanNumberTest {
-	
+
+	RomanNumber romanNumber = new RomanNumber();
+
 	@Test
 	public void test1ShouldBeReturnI (){
-		RomanNumber romanNumber = new RomanNumber();
-		String actualString = romanNumber.get(1);
-		assertEquals("I", actualString);
+		assertEquals("I", romanNumber.get(1));
 	} 
 
 	@Test
 	public void test2ShouldBeReturnII (){
-		RomanNumber romanNumber = new RomanNumber();
-		String actualString = romanNumber.get(2);
-		assertEquals("II", actualString);
+		assertEquals("II", romanNumber.get(2));
 	} 
 
 }
