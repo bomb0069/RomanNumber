@@ -3,10 +3,11 @@ package th.own.bomb0069.kata;
 public class RomanNumber {
 
 	public String get(int number) {
-		if (number == 2)
-			return "II";
-		else
-			return "I";
+		String romanNumber = "";
+		for (int loopNum = 1 ; loopNum <= number; loopNum++)
+			romanNumber+= "I";
+
+		return romanNumber;
 
 	}
 	
