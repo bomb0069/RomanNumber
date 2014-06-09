@@ -52,4 +52,15 @@ public class RomanNumberTest {
 		assertEquals("IX", romanNumber.get(9));
 	} 	
 
+	@Test
+	public void test10ShouldBeReturnX (){
+		assertEquals("X", romanNumber.get(10));
+	} 	
+
+	@Test
+	public void test11ShouldBeReturnXI (){
+		assertEquals("XI", romanNumber.get(11));
+	} 	
+
+
 }
