@@ -27,4 +27,9 @@ public class RomanNumberTest {
 		assertEquals("IV", romanNumber.get(4));
 	} 
 
+	@Test
+	public void test5ShouldBeReturnV (){
+		assertEquals("V", romanNumber.get(5));
+	} 
+	
 }
