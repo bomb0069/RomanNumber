@@ -8,17 +8,9 @@ public class RomanNumberTest {
 	RomanNumber romanNumber = new RomanNumber();
 
 	@Test
-	public void test1ShouldBeReturnI (){
+	public void testBefore4ShouldBeIAtXTime (){
 		assertEquals("I", romanNumber.get(1));
-	} 
-
-	@Test
-	public void test2ShouldBeReturnII (){
 		assertEquals("II", romanNumber.get(2));
-	} 
-
-	@Test
-	public void test3ShouldBeReturnIII (){
 		assertEquals("III", romanNumber.get(3));
 	} 
 
@@ -33,17 +25,9 @@ public class RomanNumberTest {
 	} 
 
 	@Test
-	public void test6ShouldBeReturnVI (){
+	public void test6To8ShouldBeReturnVPlusIXTime (){
 		assertEquals("VI", romanNumber.get(6));
-	} 	
-
-	@Test
-	public void test7ShouldBeReturnVII (){
 		assertEquals("VII", romanNumber.get(7));
-	} 	
-
-	@Test
-	public void test8ShouldBeReturnVIII (){
 		assertEquals("VIII", romanNumber.get(8));
 	} 	
 
@@ -58,8 +42,10 @@ public class RomanNumberTest {
 	} 	
 
 	@Test
-	public void test11ShouldBeReturnXI (){
+	public void test11To13ShouldBeReturnXPlusIXTime (){
 		assertEquals("XI", romanNumber.get(11));
+		assertEquals("XII", romanNumber.get(12));
+		assertEquals("XIII", romanNumber.get(13));
 	} 	
 
 
