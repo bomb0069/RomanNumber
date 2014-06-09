@@ -12,7 +12,9 @@ public class RomanNumber {
 		romanChar.put(100,"C");
 		romanChar.put(50,"L");
 		romanChar.put(10,"X");
+		romanChar.put(9,"IX");
 		romanChar.put(5,"V");
+		romanChar.put(4,"IV");
 		romanChar.put(1,"I");
 	}
 
@@ -20,14 +22,9 @@ public class RomanNumber {
 		String romanNumber = "";
 
 		for (Integer romanNo : romanChar.keySet()) {
-			while ((number != 0) && (number >= romanNo - 1)) {
-				if (number == romanNo - 1) {
-					romanNumber+= "I" + romanChar.get(romanNo);
-					number = 0;
-				} else if (number >= romanNo) {
-					romanNumber+= romanChar.get(romanNo);
-					number -= romanNo;
-				}
+			while (number >= romanNo) {
+				romanNumber+= romanChar.get(romanNo);
+				number -= romanNo;
 			}
 		}
 

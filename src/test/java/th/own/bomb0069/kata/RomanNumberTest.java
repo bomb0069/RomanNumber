@@ -55,7 +55,7 @@ public class RomanNumberTest {
 	public void test19ShouldBeReturnXIX (){
 		assertEquals("XIX", romanNumber.get(19));
 	} 	
-
+/*
 	@Test
 	public void test20To48 (){
 		assertEquals("XXV", romanNumber.get(25));
@@ -96,5 +96,5 @@ public class RomanNumberTest {
 		assertEquals("MI", romanNumber.get(1001));
 	} 	
 
-
+*/
 }
