@@ -56,5 +56,12 @@ public class RomanNumberTest {
 		assertEquals("XIX", romanNumber.get(19));
 	} 	
 
+	@Test
+	public void test20To49 (){
+		assertEquals("XXV", romanNumber.get(25));
+		assertEquals("XXX", romanNumber.get(30));
+		assertEquals("XXXIX", romanNumber.get(39));
+		assertEquals("XXXXIV", romanNumber.get(44));
+	} 	
 
 }
