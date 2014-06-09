@@ -81,4 +81,20 @@ public class RomanNumberTest {
 	} 	
 
 
+	@Test
+	public void testCDM (){
+		assertEquals("IC", romanNumber.get(99));
+		assertEquals("C", romanNumber.get(100));
+		assertEquals("CI", romanNumber.get(101));
+
+		assertEquals("ID", romanNumber.get(499));
+		assertEquals("D", romanNumber.get(500));
+		assertEquals("DI", romanNumber.get(501));
+
+		assertEquals("IM", romanNumber.get(999));
+		assertEquals("M", romanNumber.get(1000));
+		assertEquals("MI", romanNumber.get(1001));
+	} 	
+
+
 }
