@@ -7,9 +7,10 @@ import java.util.HashMap;
 
 public class RomanNumber {
 
-	List<Integer> romanNumbers = Arrays.asList(10,5);
+	List<Integer> romanNumbers = Arrays.asList(10,5,1);
 	static Map<Integer,String> romanChar = new HashMap<Integer,String>();
 	static {
+		romanChar.put(1,"I");
 		romanChar.put(5,"V");
 		romanChar.put(10,"X");
 	}
@@ -19,7 +20,9 @@ public class RomanNumber {
 
 		for (Integer romanNo : romanNumbers) {
 			do {
-				if (number == romanNo - 1) {
+				if (number == 0) {
+
+				} else if (number == romanNo - 1) {
 					romanNumber+= "I" + romanChar.get(romanNo);
 					number = 0;
 				} else if (number >= romanNo) {
@@ -27,11 +30,8 @@ public class RomanNumber {
 					number -= romanNo;
 				}
 			}
-			while (number >= romanNo - 1);
+			while ((number != 0) && (number >= romanNo - 1));
 		}
-
-		for (int loopNum = 1 ; loopNum <= number; loopNum++)
-			romanNumber+= "I";
 
 		return romanNumber;
 	}
