@@ -18,13 +18,16 @@ public class RomanNumber {
 		String romanNumber = "";
 
 		for (Integer romanNo : romanNumbers) {
-			if (number == romanNo - 1) {
-				romanNumber+= "I" + romanChar.get(romanNo);
-				number = 0;
-			} else if (number >= romanNo) {
-				romanNumber+= romanChar.get(romanNo);
-				number -= romanNo;
+			do {
+				if (number == romanNo - 1) {
+					romanNumber+= "I" + romanChar.get(romanNo);
+					number = 0;
+				} else if (number >= romanNo) {
+					romanNumber+= romanChar.get(romanNo);
+					number -= romanNo;
+				}
 			}
+			while (number >= romanNo - 1);
 		}
 
 		for (int loopNum = 1 ; loopNum <= number; loopNum++)
