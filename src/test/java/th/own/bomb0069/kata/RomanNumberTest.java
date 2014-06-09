@@ -11,4 +11,12 @@ public class RomanNumberTest {
 		String actualString = romanNumber.get(1);
 		assertEquals("I", actualString);
 	} 
+
+	@Test
+	public void test2ShouldBeReturnII (){
+		RomanNumber romanNumber = new RomanNumber();
+		String actualString = romanNumber.get(2);
+		assertEquals("II", actualString);
+	} 
+
 }
